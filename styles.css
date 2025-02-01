@@ -1,0 +1,103 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+  }
+  
+  .screen {
+    text-align: center;
+  }
+  
+  /* Primera interfaz: Ícono de la carta */
+  #initialScreen .envelope {
+    font-size: 80px;
+    cursor: pointer;
+    animation: shake 1.5s infinite ease-in-out;
+  }
+  
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0) rotate(0);
+    }
+    25% {
+      transform: translateX(-5px) rotate(-5deg);
+    }
+    50% {
+      transform: translateX(5px) rotate(5deg);
+    }
+    75% {
+      transform: translateX(-5px) rotate(-5deg);
+    }
+  }
+  
+  /* Segunda interfaz: Carta */
+  #cardScreen .card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #cardScreen h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff6f61;
+  }
+  
+  .photo img {
+    width: 100%;
+    max-width: 120px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .message {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  #finishBtn {
+    background: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+  }
+  
+  #finishBtn:hover {
+    background: #ff3b2f;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Efecto de besos y abrazos */
+  #effect {
+    margin-top: 20px;
+    font-size: 40px;
+    animation: float 3s infinite ease-in-out;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }

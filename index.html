@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta para mi Novia</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Primera interfaz: Ícono de la carta -->
+  <div id="initialScreen" class="screen">
+    <div class="envelope" onclick="openCard()">
+      ✉️
+    </div>
+  </div>
+
+  <!-- Segunda interfaz: Carta (oculta inicialmente) -->
+  <div id="cardScreen" class="screen hidden">
+    <div class="card">
+      <h1>Para mi Laurita 💖</h1>
+      <div class="photo">
+        <img src="/IMG20250128162917.jpg" alt="Nuestra foto">
+      </div>
+      <p class="message">
+        Querida Laura,<br><br>
+        Aunque no esté físicamente a tu lado este 14 de febrero, quiero que sepas que mi corazón está contigo en cada momento.<br><br>
+        Te quiero no solo por lo que eres, sino por lo que haces de mí, por como eres, así ta cual tu mi niña. Eres mi inspiración, mi alegría y mi razón para ser mejor. A pesar de la distancia, mi amor por ti crece cada día más.<br><br>
+        Espero que esta pequeña carta te recuerde lo mucho que significas para mí, se que se quedan muy cortas las palabras pero tu muy bien sabes, nadien más que tu, lo que te quiero decir. Eres mi niña guapa, mi Laurita y la persona mas importante para mi hoy y siempre, claro las otras personas son tus futuros suegros💕.<br><br>
+        Te quiero, Con todo mi amor,<br>
+        Laura ❤️
+      </p>
+      <button id="finishBtn">Finalizar</button>
+    </div>
+  </div>
+
+  <!-- Efecto de besos y abrazos (oculto inicialmente) -->
+  <div id="effect" class="hidden">
+    <!-- Aquí aparecerán los besos y abrazos -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
