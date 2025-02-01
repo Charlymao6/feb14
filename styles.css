@@ -101,3 +101,53 @@ body {
       transform: translateY(-10px);
     }
   }
+
+  /* Estilos responsive */
+@media (max-width: 768px) {
+  /* Ajustes para tablets y celulares */
+  body {
+    padding: 10px;
+  }
+
+  .card {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .photo img {
+    max-width: 150px;
+  }
+
+  .message {
+    font-size: 14px;
+  }
+
+  #finishBtn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustes para celulares pequeños */
+  h1 {
+    font-size: 18px;
+  }
+
+  .photo img {
+    max-width: 120px;
+  }
+
+  .message {
+    font-size: 12px;
+  }
+
+  #finishBtn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
